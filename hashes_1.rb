@@ -37,25 +37,25 @@
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-email = {
-  sender: "Artemy",
-  recipient: "Joel",
-  subject: "Tomorrow's Meeting",
-  time_stamp: "3:00pm January 3rd, 2023",
-  message: "Here are the files needed for tomorrow's presentation.",
-  attachments: ["products.ppt", "sales.pdf"]
-}
+# email = {
+#   sender: "Artemy",
+#   recipient: "Joel",
+#   subject: "Tomorrow's Meeting",
+#   time_stamp: "3:00pm January 3rd, 2023",
+#   message: "Here are the files needed for tomorrow's presentation.",
+#   attachments: ["products.ppt", "sales.pdf"]
+# }
 
 # Write code that prints your email hash to the terminal.
-p email
+# p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-p email.keys
+# p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-p email.values
+# p email.values
 
 
 #-------------------
@@ -106,3 +106,50 @@ posts = ["image at beach", "holiday party", "adorable puppy", "video of cute bab
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+email = [
+  {
+  sender: "Artemy",
+  recipient: "Joel",
+  subject: "Tomorrow's Meeting",
+  time_stamp: "3:00pm January 3rd, 2023",
+  message: "Here are the files needed for tomorrow's presentation.",
+  attachments: ["products.ppt", "sales.pdf"]
+},
+{
+  sender: "Joel",
+  recipient: "Artemy",
+  subject: "Today's Meeting",
+  time_stamp: "10:00am January 4th, 2023",
+  message: "It went well! They made the purchase!",
+  attachments: ["bill.pdf", "contract.pdf"]
+},
+{
+  sender: "Kyle",
+  recipient: "Amy",
+  subject: "Yesterday's Meeting",
+  time_stamp: "5:00pm January 5th, 2023",
+  message: "I was impressed with Joel's presentation! Please approve his bonus.",
+  attachments: ["employee_eval.doc", "bonus_check.doc"]
+}
+]
+
+# p email
+# printed everything
+# p email.values
+# caused error, suggested "did you mean vales_at"
+# p email.values_at
+# printed a blank array
+# p email.values_at(0)
+# printed all data for the first hash, both keys and values. Included the brackets as though it were still part of the array, instead of printing as an individual element
+# p email.keys
+# returned error
+# p email.keys_at(0)
+# returned error
+hash1 = email.shift
+p email
+p hash1
+p hash1.values
+p hash1.keys
+# Calling the shift method to separate out a hash was necessary to print the individual values and keys for it. But now that hash has been removed from the original array, so should be added back.
+p email.unshift(hash1)
