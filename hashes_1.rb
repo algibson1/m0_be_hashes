@@ -6,25 +6,25 @@
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
+# foods = {"apples": 23, "grapes": 507, "eggs": 48}
 
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-p foods.keys
+# p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-p foods.values
+# p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-p foods.values[1]
+# p foods.values[1]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-foods["oranges"] = 53
-p foods
+# foods["oranges"] = 53
+# p foods
 
 
 #-------------------
@@ -37,17 +37,25 @@ p foods
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
+email = {
+  sender: "Artemy",
+  recipient: "Joel",
+  subject: "Tomorrow's Meeting",
+  time_stamp: "3:00pm January 3rd, 2023",
+  message: "Here are the files needed for tomorrow's presentation.",
+  attachments: ["products.ppt", "sales.pdf"]
+}
 
 # Write code that prints your email hash to the terminal.
-
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
